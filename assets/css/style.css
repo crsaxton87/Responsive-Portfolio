@@ -1,0 +1,249 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    background-image: url("../../assets/images/bg1.png");
+    background-repeat: repeat;
+    margin-bottom: 100px;
+}
+
+h1 {
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 2;
+}
+
+h1#social {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+a:link {
+    color: #777777;
+}
+
+a:visited {
+    color: #777777;
+}
+
+a:hover {
+    color: #4aaaa5;
+}
+
+.header {
+    background-color:white;
+    border-bottom: solid #cccccc 2px;
+    line-height: 90px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #1F5D5A;
+    border-top: solid #4aaaa5 10px;
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+footer span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #efefef;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 10px;
+    border-color: #dddddd;
+    box-sizing: border-box;
+}
+
+em {
+    font-style: italic;
+}
+
+.container {
+    max-width: 960px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.container-sm {
+    width: 66%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    float: left;
+}
+
+.container-social {
+    width: 30%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    float: right;
+}
+
+.button {
+    color: white;
+    background-color: #4aaaa5;
+    width: 100px;
+    margin-bottom: 0;
+}
+
+.portimage {
+    position: relative;
+    width: 275px;
+    height: 205px;
+    float: left;
+    margin: 0 40px 55px 0;
+}
+
+.newrow {
+    clear: both;
+}
+
+.portoverlay {
+    position: absolute;
+    background-color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto;
+    width: 275px;
+    z-index: 1;
+    top: 145px;
+
+}
+
+.icons {
+    margin: 20px 5px 20px 0;
+}
+
+#name {
+    background-color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 30px;
+    float: left;
+}
+
+#nav {
+    text-align: right;
+    word-spacing: 15px;
+    font-size: 18px;
+    color: #efefef;
+}
+
+#nav a:link{
+    color: #777777;
+    text-decoration: none;
+}
+
+#content {
+    background-color: #ffffff;
+    border: solid #efefef 2px;
+    margin: 40px auto;
+    padding: 20px 30px;
+    overflow: auto;
+
+}
+
+#content-text {
+    border-top: solid #cccccc 3px;
+    padding: 20px 0;
+    line-height: 2;
+    font-size: 18px;
+}
+
+#social-icons {
+    border-top: solid #cccccc 2px;
+}
+
+#profile-image {
+    float: left;
+    margin: 10px 20px 20px 0;
+}
+
+
+/* Change color of placeholder text in forms */
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ababab;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ababab;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #ababab;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width : 980px) {
+    .container {
+        max-width: 725px;
+    }
+    .container-sm {
+        width: 58%;
+    }
+    .container-social {
+        width: 37%;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .container {
+        max-width: 725px;
+    }
+    .container-sm {
+        width: 100%;
+    }
+    .container-social {
+        width: 100%;
+        float: left;
+    }
+    div#content.container-social {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width : 640px) {
+
+}
