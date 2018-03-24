@@ -29,6 +29,7 @@ h2 {
 
 a:link {
     color: #777777;
+    text-decoration: none;
 }
 
 a:visited {
@@ -37,24 +38,6 @@ a:visited {
 
 a:hover {
     color: #4aaaa5;
-}
-
-.header {
-    background-color:white;
-    border-bottom: solid #cccccc 2px;
-    line-height: 90px;
-}
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    background-color: #1F5D5A;
-    border-top: solid #4aaaa5 10px;
-    color: white;
-    text-align: center;
-    z-index: 2;
 }
 
 footer span {
@@ -91,10 +74,17 @@ em {
     font-style: italic;
 }
 
+.header {
+    background-color:white;
+    border-bottom: solid #cccccc 2px;
+    line-height: 90px;
+}
+
 .container {
     max-width: 960px;
     box-sizing: border-box;
     margin: 0 auto;
+
 }
 
 .container-sm {
@@ -120,13 +110,11 @@ em {
 
 .portimage {
     position: relative;
-    width: 275px;
-    height: 205px;
     float: left;
-    margin: 0 40px 55px 0;
+    margin: 0 9px 20px 0;
 }
 
-.newrow {
+.clear {
     clear: both;
 }
 
@@ -135,18 +123,37 @@ em {
     background-color: #4aaaa5;
     font-family: 'Georgia', Times, Times New Roman, serif;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 1em;
     text-align: center;
-    line-height: 50px;
+    line-height: 2.5;
     margin: 0 auto;
-    width: 275px;
+    width: 100%;
     z-index: 1;
-    top: 145px;
+    top: 65%;
+    animation-name: POanim;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
 
+@keyframes POanim {
+    from {background-color: white;}
+    to {background-color: #4aaaa5;}
 }
 
 .icons {
     margin: 20px 5px 20px 0;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #1F5D5A;
+    border-top: solid #4aaaa5 10px;
+    color: white;
+    text-align: center;
+    z-index: 2;
 }
 
 #name {
@@ -166,18 +173,12 @@ em {
     color: #efefef;
 }
 
-#nav a:link{
-    color: #777777;
-    text-decoration: none;
-}
-
 #content {
     background-color: #ffffff;
     border: solid #efefef 2px;
     margin: 40px auto;
     padding: 20px 30px;
     overflow: auto;
-
 }
 
 #content-text {
@@ -193,8 +194,13 @@ em {
 
 #profile-image {
     float: left;
-    margin: 10px 20px 20px 0;
+    margin: 10px 20px 0 0;
 }
+
+#imgtrans {
+    width: 100%;
+}
+
 
 
 /* Change color of placeholder text in forms */
@@ -226,11 +232,25 @@ em {
     .container-social {
         width: 37%;
     }
+    .portimage {
+        width: 100%;
+    }
+    .portoverlay {
+        font-size: 1.5em;
+    }
+    #profile-image {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    #profile-image img {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width : 768px) {
     .container {
-        max-width: 725px;
+        max-width: 95%;
     }
     .container-sm {
         width: 100%;
@@ -242,8 +262,51 @@ em {
     div#content.container-social {
         margin: 0;
     }
+    .portimage {
+        width: 48%;
+    }
+    .portoverlay {
+        font-size: 1.2em;
+    }
+    #profile-image {
+        width: 50%;
+        float: left;
+        margin-bottom: 0px;
+    }
 }
 
 @media screen and (max-width : 640px) {
-
+    .container {
+        max-width: 95%;
+    }
+    
+    .container#navcont {
+        max-width: 100%;
+    }
+    .portimage {
+        width: 100%;
+    }
+    .portoverlay{
+        font-size: 1.5em;
+        top: 70%;
+    }
+    #name {
+        width: 100%;
+        float: left;
+        text-align: center;
+        padding-left: 0;
+    }
+    #nav {
+        width: 100%;
+        float: left; 
+        text-align: center;
+        background-color: white; 
+        border-bottom: solid #cccccc 2px;
+        line-height: 3.5;
+    }
+    #profile-image {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
 }
